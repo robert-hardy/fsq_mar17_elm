@@ -19,8 +19,8 @@ The server is written in Python 3.5 using Flask. I _always_ use `virtualenv`,
 so the code to get started is:
 
     virtualenv venv -p /usr/python3.5
-    pip install -r requirements.txt
     source venv/bin/activate
+    pip install -r requirements.txt
     source build_and_run.sh PanelWordEcho
 
 then go visit `http://localhost:8080`.
