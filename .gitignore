@@ -1,0 +1,5 @@
+elm-stuff/
+*.swp
+app.js
+venv/
+__pycache__
