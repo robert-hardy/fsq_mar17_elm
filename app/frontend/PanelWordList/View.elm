@@ -18,7 +18,7 @@ root model =
                         [ class "panel-heading" ]
                         [ div
                             [ class "panel-title" ]
-                            [ h1 [] [ text "Word echo" ] ]
+                            [ h1 [] [ text "Word list" ] ]
                         ]
 
                 panelBody =
