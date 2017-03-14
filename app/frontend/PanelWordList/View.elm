@@ -31,16 +31,19 @@ root model =
                         [ li
                             [ class "list-group-item"
                             , onClick (WordSelected "word 1")
+                            , style [("cursor", "pointer")]
                             ]
                             [ text "word 1" ]
                         , li
                             [ class "list-group-item"
                             , onClick (WordSelected "word 2")
+                            , style [("cursor", "pointer")]
                             ]
                             [ text "word 2" ]
                         , li
                             [ class "list-group-item"
                             , onClick (WordSelected "word 3")
+                            , style [("cursor", "pointer")]
                             ]
                             [ text "word 3" ]
                         ]
