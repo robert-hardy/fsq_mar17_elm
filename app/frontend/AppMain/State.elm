@@ -1,6 +1,5 @@
 module AppMain.State exposing (..)
 
-import AppMain.Rest exposing (..)
 import AppMain.Types exposing (..)
 
 
