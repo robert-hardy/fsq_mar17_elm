@@ -18,8 +18,4 @@ init =
 
 
 update msg model =
-    let
-        foo =
-            Debug.log "model" model
-    in
-        ( model, Cmd.none )
+    ( model, Cmd.none )
