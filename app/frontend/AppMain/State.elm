@@ -18,4 +18,9 @@ init =
 
 
 update msg model =
-    ( model, Cmd.none )
+    case msg of
+        PanelWordList msg ->
+            ( model, Cmd.none )
+
+        otherwise ->
+            ( model, Cmd.none )
