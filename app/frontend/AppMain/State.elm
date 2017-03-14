@@ -22,7 +22,18 @@ update msg model =
         PanelWordList msg ->
             case msg of
                 PanelWordList.Types.WordSelected w ->
-                    ( model, Cmd.none )
+                    let
+                        wep_model =
+                            model.word_echo_panel_model
+
+                        new_word_echo_panel_model =
+                            { wep_model | word = Just w }
+
+                        new_app_model =
+                            { model | word_echo_panel_model =
+                                new_word_echo_panel_model }
+                    in
+                        ( new_app_model, Cmd.none )
 
                 otherwise ->
                     ( model, Cmd.none )
