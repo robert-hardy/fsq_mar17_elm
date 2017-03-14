@@ -9,10 +9,10 @@ init : ( Model, Cmd Msg )
 init =
     let
         word_list_panel_model =
-            PanelWordList.Types.Model Nothing Nothing
+            PanelWordList.Types.Model (Just "foo") (Just "foo")
 
         word_echo_panel_model =
-            PanelWordEcho.Types.Model Nothing Nothing
+            PanelWordEcho.Types.Model (Just "foo") Nothing
     in
         ( Model word_list_panel_model word_echo_panel_model, Cmd.none )
 
