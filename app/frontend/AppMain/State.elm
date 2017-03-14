@@ -20,7 +20,12 @@ init =
 update msg model =
     case msg of
         PanelWordList msg ->
-            ( model, Cmd.none )
+            case msg of
+                PanelWordList.Types.WordSelected w ->
+                    ( model, Cmd.none )
+
+                otherwise ->
+                    ( model, Cmd.none )
 
         otherwise ->
             ( model, Cmd.none )
