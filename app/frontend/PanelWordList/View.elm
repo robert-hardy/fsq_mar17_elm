@@ -34,10 +34,14 @@ root model =
                             ]
                             [ text "word 1" ]
                         , li
-                            [ class "list-group-item" ]
+                            [ class "list-group-item"
+                            , onClick (WordSelected "word 2")
+                            ]
                             [ text "word 2" ]
                         , li
-                            [ class "list-group-item" ]
+                            [ class "list-group-item"
+                            , onClick (WordSelected "word 3")
+                            ]
                             [ text "word 3" ]
                         ]
             in
