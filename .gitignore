@@ -4,3 +4,4 @@ app.js
 venv/
 __pycache__
 *.pyc
+*.swo
