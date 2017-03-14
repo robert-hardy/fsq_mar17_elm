@@ -1,9 +1,13 @@
 module AppMain.Types exposing (..)
 
+import PanelWordList.Types
+import PanelWordEcho.Types
+
+
 
 type alias Model =
-    { word : Maybe String
-    , reply : Maybe String
+    { word_list_panel_model : PanelWordList.Types.Model
+    , word_echo_panel_model : PanelWordEcho.Types.Model
     }
 
 
