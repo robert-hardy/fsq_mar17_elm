@@ -3,3 +3,4 @@ elm-stuff/
 app.js
 venv/
 __pycache__
+*.pyc
