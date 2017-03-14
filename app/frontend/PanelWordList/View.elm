@@ -24,29 +24,20 @@ root model =
                 panelBody =
                     div
                         [ class "panel-body" ]
-                        [ text "Word to echo: "
-                        , code [] [ text w ]
-                        ]
+                        [ text "Click a word" ]
 
                 panelList =
-                    case model.reply of
-                        Nothing ->
-                            ul [ class "list-group" ]
-                                [ li [ class "list-group-item" ]
-                                    [ button
-                                        [ class "btn btn-primary"
-                                        , onClick GetReply
-                                        ]
-                                        [ text "Get the reply" ]
-                                    ]
-                                ]
-
-                        Just reply ->
-                            ul [ class "list-group" ]
-                                [ li
-                                    [ class "list-group-item" ]
-                                    [ text reply ]
-                                ]
+                    ul [ class "list-group" ]
+                        [ li
+                            [ class "list-group-item" ]
+                            [ text "word 1" ]
+                        , li
+                            [ class "list-group-item" ]
+                            [ text "word 2" ]
+                        , li
+                            [ class "list-group-item" ]
+                            [ text "word 3" ]
+                        ]
             in
                 div [ class "container" ]
                     [ div [ class "panel panel-default" ]
