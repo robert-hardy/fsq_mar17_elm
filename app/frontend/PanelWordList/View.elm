@@ -29,7 +29,9 @@ root model =
                 panelList =
                     ul [ class "list-group" ]
                         [ li
-                            [ class "list-group-item" ]
+                            [ class "list-group-item"
+                            , onClick (WordSelected "word 1")
+                            ]
                             [ text "word 1" ]
                         , li
                             [ class "list-group-item" ]

@@ -8,6 +8,6 @@ type alias Model =
 
 
 type Msg
-    = GetReply
+    = WordSelected String
     | Reply String
     | Failed
