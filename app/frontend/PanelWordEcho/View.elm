@@ -6,6 +6,7 @@ import Html.Events exposing (onClick)
 import PanelWordEcho.Types exposing (..)
 
 
+root : Model -> Html Msg
 root model =
     case model.word of
         Nothing ->

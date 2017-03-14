@@ -6,15 +6,18 @@ import Html.Events exposing (onClick)
 import AppMain.Types exposing (..)
 import PanelWordList.View
 import PanelWordEcho.View
+import Html.App
 
 
 root model =
     let
         word_list_panel_view =
-            PanelWordList.View.root model.word_list_panel_model
+            Html.App.map PanelWordList (PanelWordList.View.root
+            model.word_list_panel_model)
 
         word_echo_panel_view =
-            PanelWordEcho.View.root model.word_echo_panel_model
+            Html.App.map PanelWordEcho (PanelWordEcho.View.root
+            model.word_echo_panel_model)
 
         in
             div [ class "container" ]

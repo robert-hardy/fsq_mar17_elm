@@ -12,6 +12,5 @@ type alias Model =
 
 
 type Msg
-    = WordSelected String
-    | Reply String
-    | Failed
+    = PanelWordList PanelWordList.Types.Msg
+    | PanelWordEcho PanelWordEcho.Types.Msg
