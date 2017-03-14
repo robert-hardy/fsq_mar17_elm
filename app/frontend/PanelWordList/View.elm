@@ -30,22 +30,22 @@ root model =
                     ul [ class "list-group" ]
                         [ li
                             [ class "list-group-item"
-                            , onClick (WordSelected "word 1")
+                            , onClick (WordSelected "Hello")
                             , style [("cursor", "pointer")]
                             ]
-                            [ text "word 1" ]
+                            [ text "Hello" ]
                         , li
                             [ class "list-group-item"
-                            , onClick (WordSelected "word 2")
+                            , onClick (WordSelected "Buongiorno")
                             , style [("cursor", "pointer")]
                             ]
-                            [ text "word 2" ]
+                            [ text "Buongiorno" ]
                         , li
                             [ class "list-group-item"
-                            , onClick (WordSelected "word 3")
+                            , onClick (WordSelected "Bonjour")
                             , style [("cursor", "pointer")]
                             ]
-                            [ text "word 3" ]
+                            [ text "Bonjour" ]
                         ]
             in
                 div [ class "container" ]
