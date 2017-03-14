@@ -11,10 +11,10 @@ import PanelWordEcho.View
 root model =
     let
         word_list_panel_view =
-            PanelWordList.View.root
+            PanelWordList.View.root model.word_list_panel_model
 
         word_echo_panel_view =
-            PanelWordEcho.View.root
+            PanelWordEcho.View.root model.word_echo_panel_model
 
         panelHeader =
             div
