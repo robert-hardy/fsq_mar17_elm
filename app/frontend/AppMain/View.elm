@@ -19,8 +19,8 @@ root model =
             Html.App.map PanelWordEcho (PanelWordEcho.View.root
             model.word_echo_panel_model)
 
-        in
-            div [ class "container" ]
-                [ word_list_panel_view
-                , word_echo_panel_view
-                ]
+    in
+        div [ class "container" ]
+            [ word_list_panel_view
+            , word_echo_panel_view
+            ]
